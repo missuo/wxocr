@@ -1,8 +1,7 @@
 services:
-  wechat-ocr-api:
-    build: .
-    container_name: wechat-ocr-api
+  wxocr:
+    image: ghcr.io/missuo/wxocr:latest
+    container_name: wxocr
     ports:
       - "5000:5000"
     restart: unless-stopped
-    
